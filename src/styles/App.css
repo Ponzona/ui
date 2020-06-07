@@ -1,0 +1,104 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Piedra&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+
+.logo {
+	display: flex;
+	/*font-family: 'Piedra', cursive;*/
+	font-family: 'Knewave', cursive;
+	font-size: 40px;
+	line-height: 1;
+	color: darkgreen;
+}
+
+.logo__side {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	height: 100px;
+	background: url('../images/gear.svg') center center no-repeat;
+	background-size: contain;
+	padding-bottom: 15px;
+	animation: gear-rotate 20s infinite;
+	animation-fill-mode: forwards;
+	position: relative;
+}
+
+.logo__side_left {
+	left: 10px;
+}
+
+.logo__side_right {
+	right: 10px;
+}
+
+.letter {
+	letter-spacing: 1px;
+}
+
+.letter_closer {
+	letter-spacing: -2px;
+}
+
+.letter_rotate-e {
+	animation: letter-rotate-e 20s infinite;
+	animation-fill-mode: forwards;
+	transform-origin: center 65%;
+}
+
+.letter_rotate-s {
+	animation: letter-rotate-s 20s infinite;
+	animation-fill-mode: forwards;
+	transform-origin: center 65%;
+}
+
+@keyframes gear-rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	5% {
+		transform: rotate(180deg);
+	}
+
+	45% {
+		transform: rotate(180deg);
+	}
+
+	50% {
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes letter-rotate-e {
+	0% {
+		transform: rotate(0deg);
+	}
+	5% {
+		transform: rotate(180deg);
+	}
+
+	45% {
+		transform: rotate(180deg);
+	}
+
+	50% {
+		transform: rotate(0deg);
+	}
+}
+
+@keyframes letter-rotate-s {
+	0% {
+		transform: rotate(0deg);
+	}
+	5% {
+		transform: rotate(90deg);
+	}
+
+	45% {
+		transform: rotate(90deg);
+	}
+
+	50% {
+		transform: rotate(0deg);
+	}
+}
